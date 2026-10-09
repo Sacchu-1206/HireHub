@@ -1,0 +1,31 @@
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.search-box input {
+  padding: 14px;
+  width: 240px;
+}
+
+.search-box button {
+  padding: 14px 24px;
+  cursor: pointer;
+}

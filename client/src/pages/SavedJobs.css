@@ -1,0 +1,161 @@
+.saved-jobs-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 24px;
+  min-height: 70vh;
+}
+
+.saved-jobs-header {
+  margin-bottom: 30px;
+}
+
+.saved-jobs-header h1 {
+  margin: 0 0 8px;
+  font-size: 34px;
+  color: #111827;
+}
+
+.saved-jobs-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.saved-jobs-list {
+  display: grid;
+  gap: 18px;
+}
+
+.saved-job-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.saved-job-content {
+  flex: 1;
+}
+
+.saved-job-content h2 {
+  margin: 0 0 7px;
+  font-size: 22px;
+  color: #111827;
+}
+
+.saved-job-company {
+  margin: 0 0 18px;
+  color: #4b5563;
+  font-weight: 600;
+}
+
+.saved-job-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 18px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.saved-job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.saved-job-skills span {
+  padding: 5px 9px;
+  background: #f3f4f6;
+  color: #374151;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.saved-job-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.view-job-btn,
+.remove-job-btn {
+  min-width: 110px;
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+
+.view-job-btn {
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+}
+
+.view-job-btn:hover {
+  background: #1d4ed8;
+}
+
+.remove-job-btn {
+  border: 1px solid #fecaca;
+  background: #fff1f2;
+  color: #dc2626;
+}
+
+.remove-job-btn:hover {
+  background: #fee2e2;
+}
+
+.no-saved-jobs {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed #d1d5db;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.no-saved-jobs h2 {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.no-saved-jobs p {
+  margin: 0 0 20px;
+  color: #6b7280;
+}
+
+.no-saved-jobs a {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .saved-jobs-page {
+    padding: 35px 18px;
+  }
+
+  .saved-job-card {
+    flex-direction: column;
+  }
+
+  .saved-job-actions {
+    flex-direction: row;
+  }
+
+  .saved-job-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
